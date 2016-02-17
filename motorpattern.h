@@ -8,5 +8,6 @@ void forward (int time);
 void forward ();
 void brake();
 void centerscan();
+void doughnut();
 
 #endif

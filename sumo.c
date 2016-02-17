@@ -26,10 +26,13 @@ task main()
 		//	forward(500);
 		//}
 
-		if (SensorValue[touchLeft] == 0) // unpressed
+		if (SensorValue[touchLeft] == 0 || SensorValue[touchRight] == 0) // unpressed
 			hunt = 3;
 		//else if (SensorValue[touchRight] == 1)
 		//	hunt = 4;
+
+		else if (SensorValue[touchLeft] == 1 || SensorValue[touchRight] == 1) // pressed
+			hunt = 5;
 
 		if (dist > 50)
 			hunt = 1;
@@ -58,6 +61,11 @@ task main()
 			hunt = 0;
 			break;
 
+		case 5:
+			doughnut();
+			wait1Msec(3000);
+			hunt = 0;
+			break;
 		}
 	}
 }

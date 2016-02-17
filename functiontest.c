@@ -10,11 +10,10 @@
 #include "motorpattern.h"
 #include "motorpattern.c"
 
-task main()
-{
-	wait1Msec(50);
- 	forward();
- 	wait1Msec(10000);
+task main(){
+
+	doughnut();
+
 	brake();
 	//josh was here
 }
