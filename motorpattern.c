@@ -83,5 +83,8 @@ void doughnut()
 			motor[backMotor] = 5;
 		}
 	}
+	else
+		break;
+
 	wait1Msec(3000);
 }

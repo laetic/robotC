@@ -63,7 +63,6 @@ task main()
 
 		case 5:
 			doughnut();
-			wait1Msec(3000);
 			hunt = 0;
 			break;
 		}
