@@ -61,6 +61,21 @@ void centerscan()
 		rturn();
 	brake();
 }
+
+int leftT,rightT,son,lig;
+
+void functiontest()
+{
+	while (1)
+	{
+		leftT = SensorValue[touchLeft];
+		rightT = SensorValue[touchRight];
+		son = SensorValue[sonar];
+		lig = SensorValue[lig];
+	}
+}
+
+
 void doughnut()
 {
 	while(SensorValue[touchLeft] == 1)

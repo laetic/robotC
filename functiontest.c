@@ -12,8 +12,6 @@
 
 task main(){
 
-	doughnut();
-
-	brake();
+	functiontest()
 	//josh was here
 }
