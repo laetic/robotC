@@ -63,28 +63,18 @@ void centerscan()
 }
 void doughnut()
 {
-	if(SensorValue[touchLeft] == 1)
+	while(SensorValue[touchLeft] == 1)
 	{
-		wait1Msec(1000);
-		if(SensorValue[touchLeft] == 1)
-		{
 			motor[rightMotor] = 100;
 			motor[leftMotor] = -100;
 			motor[backMotor] = 5;
-		}
+
 	}
-	else if(SensorValue[touchRight] == 1)
+	while(SensorValue[touchRight] == 1)
 	{
-		wait1Msec(1000);
-		if(SensorValue[touchRight] == 1)
-		{
 			motor[rightMotor] = -100;
 			motor[leftMotor] = 100;
 			motor[backMotor] = 5;
-		}
 	}
-	else
-		break;
-
-	wait1Msec(3000);
+	brake();
 }
